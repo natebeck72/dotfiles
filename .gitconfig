@@ -1,0 +1,31 @@
+# THIS FILE IS UNDER VERSION CONTROLE. MAKE YOUR CHANGES IN THE REPO!!! #
+#***********************************************************************#
+
+[user]
+	email = nate@natebeck.me
+	name = Nate Beck
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[init]
+	defaultBranch = master
+[web]
+	browser = google-chrome
+[credentials]
+	helper = osxkeychain
+[push]
+	default = simple
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[http]
+	postBuffer = 524288000
+	version = HTTP/1.1
